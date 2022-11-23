@@ -2,7 +2,7 @@ import Bag from '../assets/vectors/bag.svg'
 
 export default function TopBar(){
     return(
-        <nav className="text-white px-2.5 py-6 flex justify-between items-center">
+        <nav className="text-white px-2.5 py-6 flex justify-between items-center md:mb-6">
             <h1 className="text-xl font-bold">WeMovies</h1>
             <div className="flex justify-between items-center">
                 <div className='text-right mr-2.5'>
