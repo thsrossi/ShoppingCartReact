@@ -1,14 +1,24 @@
 import { Product } from "../@types/product";
 import Button from "./Button";
 import CartShopping from "../assets/vectors/VectorShoppingCart.svg";
+import { useContext, useEffect } from "react";
+import { CartContext } from "../CartContext";
 
 export interface CardProps {
     product: Product
 }
 
 export default function ProductCard(props: CardProps) {
+    // console.log(props.product.id)
+    const {addItem, cartItems} = useContext(CartContext)
+    console.log(cartItems)
+
+    useEffect(()=>{
+        console.log(cartItems)
+    }, [cartItems])
+
     return (
-        <div className="w-full rounded p-11 bg-white text-center max-w-[343px] mx-auto font-bold">
+        <div className="w-full rounded p-11 bg-white text-center max-w-[343px] mx-auto font-bold" onClick={()=>{addItem(props.product.id)}}>
             
                 <img className="mx-auto" src={props.product.image} />
                 <h6 className="pt-2 text-xs">{props.product.title}</h6>
