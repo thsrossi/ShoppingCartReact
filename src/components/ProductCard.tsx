@@ -1,5 +1,5 @@
 import { Product } from "../@types/product";
-import Button from "./Button";
+import ButtonCard from "./ButtonCard";
 import CartShopping from "../assets/vectors/VectorShoppingCart.svg";
 import { useContext, useEffect, useState } from "react";
 import { CartContext } from "../CartContext";
@@ -29,7 +29,7 @@ export default function ProductCard(props: CardProps) {
                 <img className="mx-auto" src={props.product.image} />
                 <h6 className="pt-2 text-xs">{props.product.title}</h6>
                 <p className="pt-1">R$ {props.product.price.toFixed(2)}</p>
-                <Button
+                <ButtonCard
                 onClick={()=>{addItem(props.product.id)}}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
@@ -39,7 +39,7 @@ export default function ProductCard(props: CardProps) {
                         <span>{productAmountInCart}</span>
                     </div>
                     <span className={'w-[157px]'}>{btnContent}</span>
-                </Button>
+                </ButtonCard>
         </div>
     ) 
 }

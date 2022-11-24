@@ -19,7 +19,8 @@ module.exports = {
         sans: "Open sans"
       },
       padding:{
-        11: '0.6875rem'
+        11: '0.6875rem', 
+        15: '3.75rem',
       }
     },
   },

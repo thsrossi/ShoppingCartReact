@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import React from "react";
 import TopBar from './components/TopBar';
 import { CartContext, CartStorage } from './CartContext';
+import Cart from './pages/Cart';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <CartStorage>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/cart" element={<Cart />} />
           </Routes>
         </CartStorage>
       </Router>
