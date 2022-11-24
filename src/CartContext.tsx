@@ -1,5 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 
+
 export interface cartProps{
     cartItems: any;
     addItem: (id: number) => void
@@ -22,27 +23,31 @@ export const CartStorage = ({children}: any) =>{
         localStorage.setItem('cartItems', JSON.stringify(cartItems))
     }, [cartItems])
 
-
-    console.log(cartItems)
-
     function addItem(id:number){
         let itemIsAlreadyInCart = false
-        if(cartItems){
-            cartItems?.forEach((element: any) => {
+        if(cartItems.length > 0 && cartItems){
+            cartItems?.forEach((element: any, index: number) => {
                 if(element.id == id){
-                    element.amount = element.amount + 1
                     itemIsAlreadyInCart = true
+                    let amount = element.amount + 1
+                    let cartItemsCopy = [...cartItems]
+                    cartItemsCopy[index] = {id: id, amount: amount};
+                    setCartItems([...cartItemsCopy])
                 } 
             })
-        } else{
+
+            if(!itemIsAlreadyInCart){
+                setCartItems((prevState:any)=>([
+                    ...prevState, {id: id, amount: 1}
+                ]
+            ))
+            }
+        }      
+        else{
             setCartItems([{id: id, amount: 1}])
         }
         
-        if(itemIsAlreadyInCart){
-            setCartItems((prevState:any)=>({
-                ...prevState.push({id: id, amount: 1})
-            }))
-        }
+
 
         console.log(id, itemIsAlreadyInCart)
     }

@@ -10,6 +10,9 @@ module.exports = {
         },
         blue:{
           500: "#009EDD"
+        },
+        green:{
+          600: "#039B00"
         }
       },
       fontFamily:{
