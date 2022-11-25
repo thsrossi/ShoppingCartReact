@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Bag from '../assets/vectors/bag.svg'
-import { CartContext } from '../CartContext'
+import { CartContext, CartItemsProps } from '../CartContext'
 
 
 export default function TopBar(){
@@ -10,7 +10,7 @@ export default function TopBar(){
 
     useEffect(()=>{
         if(cartItems && cartItems.length > 0){
-            setItemsAmount(cartItems.map((item:any) => item.amount).reduce((prev : number, next:number) => prev + next))
+            setItemsAmount(cartItems.map((item:CartItemsProps) => item.amount).reduce((prev : number, next:number) => prev + next))
         } else{
             setItemsAmount(0)
         }

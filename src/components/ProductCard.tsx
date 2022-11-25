@@ -2,7 +2,7 @@ import { Product } from "../@types/product";
 import ButtonCard from "./ButtonCard";
 import CartShopping from "../assets/vectors/VectorShoppingCart.svg";
 import { useContext, useEffect, useState } from "react";
-import { CartContext } from "../CartContext";
+import { CartContext, CartItemsProps } from "../CartContext";
 
 export interface CardProps {
     product: Product
@@ -12,7 +12,7 @@ export default function ProductCard(props: CardProps) {
     const {addItem, cartItems} = useContext(CartContext)
     let productAmountInCart : number = 0
     if(cartItems){
-        productAmountInCart = cartItems?.find((element: any) => element.id === props.product.id)?.amount || 0
+        productAmountInCart = cartItems?.find((element: CartItemsProps) => element.id === props.product.id)?.amount || 0
     }
     const [btnContent, setBtnContent] = useState<string>('ADICIONAR AO CARRINHO') 
     function handleFocus(){

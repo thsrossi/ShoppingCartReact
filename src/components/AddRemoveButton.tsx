@@ -5,12 +5,11 @@ import { CartContext } from '../CartContext'
 
 interface ButtonProps{
     operation: string,
-    id:any
+    id: number
 } 
 
 export default function AddRemoveButton({operation, id}: ButtonProps){
-    console.log(id)
-    
+  
     const {addItem, removeItem} = useContext(CartContext)
 
     const src = operation === 'add' ? Increase : Decrease

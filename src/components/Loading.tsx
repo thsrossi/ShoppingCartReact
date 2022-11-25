@@ -1,4 +1,4 @@
-import Loader from '../assets/vectors/loader.png'
+import Loader from '../assets/vectors/load-spinner.svg'
 
 export default function Loading() {
 

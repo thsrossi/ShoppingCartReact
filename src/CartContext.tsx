@@ -71,7 +71,6 @@ export const CartStorage = ({children}: any) =>{
         let itemIsAlreadyInCart = false
         if(cartItems.length > 0 && cartItems){
             cartItems?.forEach((element: any, index: number) => {
-                console.log(element)
                 if(element.id == id && element.amount != 1){
                     let amount = element.amount - 1 
                     let cartItemsCopy = [...cartItems]
@@ -85,8 +84,6 @@ export const CartStorage = ({children}: any) =>{
 
             
         }      
-        
-        console.log(id, itemIsAlreadyInCart)
     }
 
     return (
