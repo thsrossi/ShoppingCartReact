@@ -5,17 +5,17 @@ import EmptyCart from "../components/EmptyCart";
 import TopBar from "../components/TopBar";
 
 export default function Cart(){
-    const {addItem, cartItems} = useContext(CartContext)
+    const {cartItems} = useContext(CartContext)
 
     return(
-        <>
+        <div className="h-screen flex flex-col">
         <TopBar/>
-        <div className="bg-white mx-4 rounded h-full flex flex-col">
-        {cartItems ? 
+        
+        {cartItems && cartItems.length > 0 ? 
          <CartColumn/> : 
          <EmptyCart/>
         }
+        
         </div>
-        </>
     )
 } 

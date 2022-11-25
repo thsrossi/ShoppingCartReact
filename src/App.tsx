@@ -9,6 +9,7 @@ import React from "react";
 import TopBar from './components/TopBar';
 import { CartContext, CartStorage } from './CartContext';
 import Cart from './pages/Cart';
+import SucessBuy from './pages/SucessBuy';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/sucessbuy" element={<SucessBuy />} />
           </Routes>
         </CartStorage>
       </Router>
