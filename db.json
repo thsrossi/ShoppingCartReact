@@ -4,37 +4,37 @@
       "id": 1,
       "title": "Viúva Negra",
       "price": 9.99,
-      "image": "./src/assets/images/viuva-negra.png"
+      "image": "https://raw.githubusercontent.com/thsrossi/ShoppingCartReact/main/src/assets/images/viuva-negra.png"
     },
     {
       "id": 2,
       "title": "Shang-chi",
       "price": 30.99,
-      "image": "./src/assets/images/shang-chi.png"
+      "image": "https://raw.githubusercontent.com/thsrossi/ShoppingCartReact/main/src/assets/images/shang-chi.png"
     },
     {
       "id": 3,
       "title": "Homem Aranha",
       "price": 29.9,
-      "image": "./src/assets/images/spider-man.png"
+      "image": "https://raw.githubusercontent.com/thsrossi/ShoppingCartReact/main/src/assets/images/spider-man.png"
     },
     {
       "id": 5,
       "title": "Morbius",
       "price": 1.5,
-      "image": "./src/assets/images/morbius.png"
+      "image": "https://raw.githubusercontent.com/thsrossi/ShoppingCartReact/main/src/assets/images/morbius.png"
     },
     {
       "id": 6,
       "title": "Batman",
       "price": 21.9,
-      "image": "./src/assets/images/batman.png"
+      "image": "https://raw.githubusercontent.com/thsrossi/ShoppingCartReact/main/src/assets/images/batman.png"
     },
     {
       "id": 4,
       "title": "Eternos",
       "price": 17.9,
-      "image": "./src/assets/images/eternos.png"
+      "image": "https://raw.githubusercontent.com/thsrossi/ShoppingCartReact/main/src/assets/images/eternos.png"
     }
   ]
 }
