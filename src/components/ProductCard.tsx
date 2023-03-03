@@ -26,7 +26,7 @@ export default function ProductCard(props: CardProps) {
     return (
         <div className="w-full rounded p-11 bg-white text-center max-w-[343px] mx-auto font-bold" >
             
-                <img className="mx-auto" src={props.product.image} />
+                <img className="mx-auto max-w-[148px]" src={props.product.image} />
                 <h6 className="pt-2 text-xs">{props.product.title}</h6>
                 <p className="pt-1">R$ {props.product.price.toFixed(2)}</p>
                 <ButtonCard
