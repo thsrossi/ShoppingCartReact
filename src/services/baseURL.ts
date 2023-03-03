@@ -1,1 +1,1 @@
-export const baseURL = 'https://my-json-server.typicode.com/thsrossi/cart-server-db'
+export const baseURL = 'https://my-json-server.typicode.com/thsrossi/DesafioEcommerce'
