@@ -54,10 +54,9 @@ Stripe - Payment processing gateway <br/>
 Through this project, I deepened my knowledge of ReactJS and gained experience using Context API for state management. I also improved my CSS skills using Tailwind for styling.
 
 ### Useful Resources
-Stripe API Documentation: https://stripe.com/docs/api
-ReactJS Documentation: https://reactjs.org/docs/getting-started.html
-Tailwind CSS Documentation: https://tailwindcss.com/docs
-My JSON Server: https://my-json-server.typicode.com
+ReactJS Documentation: https://reactjs.org/docs/getting-started.html <br/>
+Tailwind CSS Documentation: https://tailwindcss.com/docs <br/>
+My JSON Server: https://my-json-server.typicode.com <br/>
 
 ### Author
 Frontend Mentor - @thsrossi
